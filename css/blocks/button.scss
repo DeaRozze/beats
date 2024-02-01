@@ -1,0 +1,38 @@
+.button {
+  border-radius: rem(100px);
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: rem(18px);
+  border:none;
+  padding: rem(16px) rem(40px);
+  text-decoration: none;
+  display: inline-block;
+  width: rem(160px);
+  height: rem(53px);
+  font-size: rem(16px);
+  font-weight: 700;
+  
+
+  &--theme--red {
+    background:#E01F3D;
+    color:#FFF;
+    border:rem(2px) solid #E01F3D;
+
+    &:hover {
+      background:#FFF;
+      color:#E01F3D;
+      transition: 0.3s ease ;
+    }
+  }
+
+  &--theme--transparent {
+    background: transparent;
+    color:#FFF;
+    text-transform: none;
+    font-weight: 400;
+ 
+    &:hover {
+      color:#E01F3D;
+    }
+  }
+}

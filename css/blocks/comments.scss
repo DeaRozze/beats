@@ -1,0 +1,78 @@
+.comments__section {
+  height: 100vh;
+}
+
+.comments__display {
+  background: #F8FAF9;
+  padding: rem(42px);
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content:"";
+    display: block;
+    width: rem(83px);
+    height: rem(83px);
+    background:#FFF;
+    border-radius:50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-60px);
+  }
+}
+
+.comments__display-inner {
+  display: flex;
+  align-items: center;
+}
+
+.comments__avatar {
+  height: rem(254px);
+  width: rem(264px);
+}
+
+.comments__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.comments__content {
+  flex: 1;
+  margin-left: rem(40px);
+  
+}
+
+.comments__title {
+  font-size: rem(24px);
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: rem(27px);
+}
+
+.comments__text {
+  margin-bottom: rem(38px);
+}
+
+.comments__author {
+  font-size: rem(18px);
+  font-weight: 700;
+  color:#292929;
+}
+
+.comments__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.comments__section {
+  position: relative;
+
+  &::before {
+    content: url("/img/Ellipse\ 7.png");
+    position: absolute;
+    bottom: rem(-48px);
+    left: 24%;
+  }
+}

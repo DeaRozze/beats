@@ -1,0 +1,14 @@
+.top-part {
+  background: url("././img/Ellipse\ 5.png") 66% 28% no-repeat;
+  background-color: #F5F5F5;
+  min-width: rem(1000px) ;
+  position: relative;
+  height: 100vh;
+  
+  &::before {
+    content: url("././img/Rectangle\ 14.png");
+    position: absolute;
+    bottom: rem(-26px);
+    right: 26%;
+  }
+}

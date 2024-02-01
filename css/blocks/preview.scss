@@ -1,0 +1,32 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(70px);
+}
+
+.preview__title {
+  font-size: rem(48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: rem(52px);  
+  text-transform: uppercase;
+  margin-bottom: rem(22px);
+  width: rem(400px);
+  color:#292929;
+}
+
+.preview__text {
+  font-family: "Alegreya Sans";
+  font-size: rem(21px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: rem(36px);
+  width: rem(332px);
+}
+
+
+
+
+
+
