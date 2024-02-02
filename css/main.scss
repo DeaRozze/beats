@@ -4,11 +4,9 @@ $z-fixed-menu: 100;
 $tablets: 768px;
 $phones:480px;
 
-@import "layout";
+@import "media";
 @import "layout/base";
 @import "layout/normalize";
-@import "media";
-
 
 @import "blocks/top-part";
 @import "blocks/header";
@@ -26,3 +24,6 @@ $phones:480px;
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/fixed";
+@import "blocks/hamburger";
+@import "blocks/footer";
+@import "blocks/socials";

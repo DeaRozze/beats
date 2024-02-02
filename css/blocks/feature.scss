@@ -4,6 +4,10 @@
 
 .features__list{
   display: flex;
+
+  @include phones {
+    flex-direction:column;
+}
 }
 
 .features__item {
@@ -11,13 +15,26 @@
   padding: 0 3%;
   position: relative;
 
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(30px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
  &::before {
-  content: url(././img/elips.png);
+  content: url(../img/elips.png);
   position: absolute;
   top: rem(50px);
   right: 0;
   transform: translateX(50%);
   
+
+  @include phones {
+    display: none;
+  }
 }
 
  &:first-child {
@@ -34,7 +51,11 @@
 }
 
 .feature {
-  text-align: center;
+  text-align: left;
+
+  @include phones {
+    display:flex;
+  }
 }
 
 .feature__image--wrapper {
@@ -46,6 +67,10 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(24px);
+
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .feature__icon {
@@ -67,13 +92,23 @@
 
 .feature__desc {
   padding: 0 6%;
+  
+  @include phones {
+    padding: 0;
+  }
+}
+
+.feature__text {
+  @include phones {
+    padding-left:5% ;
+  }
 }
 
 .features__section {
   position: relative;
 
   &::before {
-    content: url("././img/Vector\ 2.png");
+    content: url("../img/Vector\ 2.png");
     position: absolute;
     bottom: rem(-50px);
     left: 22%;

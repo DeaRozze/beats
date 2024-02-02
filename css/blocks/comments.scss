@@ -7,6 +7,7 @@
   padding: rem(42px);
   overflow: hidden;
   position: relative;
+  
 
   &::before {
     content:"";
@@ -25,11 +26,22 @@
 .comments__display-inner {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .comments__avatar {
   height: rem(254px);
   width: rem(264px);
+
+  @include tablets {
+    height: rem(130px);
+    width: rem(130px);
+    margin-bottom:rem(32px);
+  }
 }
 
 .comments__avatar-img {
@@ -41,7 +53,6 @@
 .comments__content {
   flex: 1;
   margin-left: rem(40px);
-  
 }
 
 .comments__title {
@@ -49,6 +60,10 @@
   font-weight: 700;
   color: #292929;
   margin-bottom: rem(27px);
+
+  @include tablets {
+    padding-right: rem(50px);
+  }
 }
 
 .comments__text {
@@ -64,6 +79,10 @@
 .comments__switcher {
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    margin-top: rem(47px);
+  }
 }
 
 .comments__section {

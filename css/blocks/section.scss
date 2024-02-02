@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &--map-section {
+    background: url(../img/map.png) center center no-repeat;
+    position: relative;
+    background-size:cover;
+  }
 }
 
 .section__title {
@@ -14,6 +20,7 @@
   text-align: center;
   color:#292929;
 }
+
 
 
 

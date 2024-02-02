@@ -1,5 +1,15 @@
+.menu {
+  margin: 0 4%;
+  padding-top: 5px;
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item {
@@ -16,6 +26,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: rem(30px);
+  white-space: nowrap;
 
   &:hover{
     color: #E01F3D;

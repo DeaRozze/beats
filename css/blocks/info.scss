@@ -1,6 +1,10 @@
 .info{
   display: flex;
   margin-right: rem(-8px);
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .info__list {

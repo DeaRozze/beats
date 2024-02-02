@@ -5,8 +5,16 @@ margin-bottom: rem(62px);
 
 .headline__title {
   margin-bottom: rem(25px);
+
+  @include phones {
+    font-size: rem(36px);
+  }
 }
 
 .headline__subtitle {
   padding:0 20%;
+
+  @include phones {
+    padding: 0;
+  }
 }
