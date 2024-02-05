@@ -21,16 +21,12 @@
       width: 323px;
       height: 323px;
       background-size: cover;
-      left: 200px;
+      left: 50%;
+      transform: translateX(-50%);
       top: 120px;
     }
   }
 
-  @include phones {
-    &::before {
-      left: 80px;
-    }
-  }
 }
 
 .preview__title {
