@@ -1308,27 +1308,12 @@ template {
   height: 2rem;
   text-align: center;
 }
-.socials__link--vk {
-  background-position: -122px -10px;
+
+.icon {
+  width: 1.6666666667rem;
+  height: 1.6666666667rem;
+  color: aqua;
 }
-.socials__link--vk:hover {
-  background-position: -122px -66px;
-}
-.socials__link--tg {
-  background-position: -122px -122px;
-}
-.socials__link--tg:hover {
-  background-position: -122px -178px;
-}
-.socials__link--fb {
-  background-position: -122px -234px;
-}
-.socials__link--fb:hover {
-  background-position: -122px -290px;
-}
-.socials__link--incst {
-  background-position: -122px -346px;
-}
-.socials__link--incst:hover {
-  background-position: -122px -402px;
+.icon:hover {
+  color: orange;
 }

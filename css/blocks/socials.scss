@@ -14,41 +14,18 @@
   width: rem(36px);
   height: rem(36px);
   text-align: center;
- 
+}
   
 
 
-  &--vk {
-  background-position:-122px -10px;
+ 
 
-    &:hover {
-    background-position:-122px -66px;
+.icon {
+  width: rem(30px);
+  height: rem(30px);
+  color:aqua;
+  &:hover {
+    color: orange;
   }
   }
-
-  &--tg {
-  background-position:-122px -122px;
-
-    &:hover {
-    background-position:-122px -178px;
-  }
-  }
-
-  &--fb {
-  background-position:-122px -234px;
-
-    &:hover {
-    background-position:-122px -290px;
-  }
-  }
-
-  &--incst {
-  background-position:-122px -346px;
-
-    &:hover {
-    background-position:-122px -402px;
-  }
-  }
-
-}
 
