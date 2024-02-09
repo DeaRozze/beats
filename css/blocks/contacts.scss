@@ -22,20 +22,34 @@
    }
 }
 
-.contacts__image {
-  width: rem(14px);
-  height: rem(14px);
-  margin-right: rem(3px);
-}
-
 .contacts__place {
   font-style: normal;
   color:black;
+
+  @include tablets {
+    margin-bottom: rem(6px);
+  }
 
   @include phones {
     margin-bottom: rem(15px);
   }
 }
 
+.contacts-icon {
+  fill: black;
+  width: rem(12px);
+  height: rem(12px);
 
+  @include tablets {
+    &--red {
+      fill: red;
+    }
+  }
+
+  @include phones {
+    &--red {
+      fill: black;
+    }
+   }
+}
 
