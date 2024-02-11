@@ -52,6 +52,11 @@
 
 .comments__content {
   flex: 1;
+  margin-left: rem(40px);
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .comments__title {

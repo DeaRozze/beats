@@ -28,11 +28,11 @@
   left: 100%;
   top: 0;
   width: rem(273px);
-  height: rem(294px);
+  height: rem(250px);
   opacity: 0;
   transition: opacity 0.4s;
-  z-index: 9999;
-  background-color:gray;
+  z-index: 10;
+  background-color:rgba(255, 255, 255, 0.8);
 }
 
 .option__list {

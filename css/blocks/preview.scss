@@ -40,10 +40,12 @@
 
   @include tablets {
     padding: 0 8%;
+    padding-top: rem(10px);
   }
 
   @include phones {
     padding: 0 4%;
+    padding-top: rem(10px);
   }
 }
 
