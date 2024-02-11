@@ -3,6 +3,7 @@
   width: rem(91px);
   height: rem(91px);
   
+  
 
   &:hover .option {
     opacity: 1;
@@ -30,12 +31,13 @@
   height: rem(294px);
   opacity: 0;
   transition: opacity 0.4s;
-
-
+  z-index: 9999;
+  background-color:gray;
 }
 
 .option__list {
   padding: 0 rem(14px);
+  
 }
 
 .option__item {
@@ -43,6 +45,7 @@
   justify-content: space-between;
   align-items:center;
   margin-top: rem(10px);
+  color:black;
 
   &:first-child {
     margin-top: 0;
