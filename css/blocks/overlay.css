@@ -19,46 +19,26 @@
   opacity: 0;
   z-index: 10;
 }
-
-.overlay--active {
-  top: 0;
-  opacity: 1;
-}
-
-.overlay .menu {
+.overlay__menu .menu {
   display: block;
 }
-
-.menu__item {
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.overlay__menu .menu__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
-.menu__item:after {
-  content: "";
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-  background-color: black;
-  border-radius: 50%;
-  margin-top: 10px;
+.overlay__menu .menu__item {
+  margin-right: 0;
+  color: white;
+  font-size: re;
 }
-.menu__item:last-child {
-  margin-bottom: 0;
-}
-.menu__item:last-child:after {
-  display: none;
-}
-.menu__link:hover {
-  opacity: 0.7;
+
+.overlay--active {
+  top: 0;
+  opacity: 1;
+  z-index: 10;
 }
 
 .body--active-menu {
