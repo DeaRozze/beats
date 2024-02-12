@@ -5,7 +5,10 @@ let body = document.querySelector('body');
 let links = document.querySelectorAll('.menu__link'); 
 
 links.forEach(function(element){
-  element.addEventListener('click' , toggleMenu);
+  element.addEventListener('click' , (e) => {
+    e.preventDefault();
+    toggleMenu();
+  });
 })
 
 function toggleMenu(){
