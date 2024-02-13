@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: rem(222px);
+  height: rem(454px);
+  
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-top: rem(25px);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__button {
+    background-color: white;
+    border: none;
+
+  }
+
+  &__title {
+    color: black;
+    font-size: rem(18px);
+    font-weight: 700;
+  }
+
+  &__icon--top {
+    display: none;
+  }
+
+}
+
+.card__body {
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ text-align: center;
+ margin-top: rem(11px);
+ 
+ display: none;
+}
+
+.card__subtitle {
+  font-size: rem(16px);
+  color:black;
+  margin-bottom: rem(4px);
+}
