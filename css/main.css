@@ -1781,12 +1781,12 @@ template {
   margin-bottom: 0.6111111111rem;
 }
 .team__subtitle::after {
-  content: url(/img/Polygon\ 1.svg);
+  content: url(../img/Polygon\ 1.svg);
   padding-left: 0.2777777778rem;
 }
 
 .team__subtitle--active::after {
-  content: url(/img/Frame\ 1.svg);
+  content: url(../img/Frame\ 1.svg);
 }
 
 .team--desktop .team__content {

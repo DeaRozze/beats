@@ -70,14 +70,14 @@
   margin-bottom: rem(11px);
 
   &::after {
-    content: url(/img/Polygon\ 1.svg);
+    content: url(../img/Polygon\ 1.svg);
     padding-left: rem(5px);
   } 
 }
 
 .team__subtitle--active {
   &::after {
-    content: url(/img/Frame\ 1.svg);
+    content: url(../img/Frame\ 1.svg);
   } 
 }
 
