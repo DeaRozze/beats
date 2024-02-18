@@ -1843,6 +1843,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 .modal.error-modal .modal__contant {
   color: red;

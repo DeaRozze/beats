@@ -9,7 +9,7 @@
   background: rgba(00, 00, 00, .5);
   justify-content: center;
   align-items:center;
-  
+  display: none;
   &.error-modal {
     .modal__contant {
       color: red;
