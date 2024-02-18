@@ -7,7 +7,8 @@
   height: 100%;
   display: flex;
   background: rgba(00, 00, 00, .5);
-  display: none;
+  justify-content: center;
+  align-items:center;
   
   &.error-modal {
     .modal__contant {

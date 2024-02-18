@@ -17,6 +17,7 @@
   width: 100%;
   min-width: 100%;
   transition: all 1s;
+
   @include tablets {
     flex-direction: column;
   
@@ -107,6 +108,8 @@ z-index: 1;
 
 .slider__list {
   transition: all 1s;
+  display: flex;
+ 
 }
 
 .slider {

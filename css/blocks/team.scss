@@ -72,15 +72,15 @@
   &::after {
     content: url(./../img/Polygon\ 1.svg);
     padding-left: rem(5px);
+   
   } 
 }
 
-.team__subtitle--active {
-  &::after {
-    content: url(./../img/Frame\ 1.svg);
-  } 
+.team__subtitle--active .team__subtitle::after{
+  transform:rotate(180deg);
+  padding-right: rem(5px);
+  
 }
-
 .team--desktop .team__content {
   position: absolute;
   top: 100%;

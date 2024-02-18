@@ -1533,6 +1533,9 @@ template {
 .slider__list {
   -webkit-transition: all 1s;
   transition: all 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider {
@@ -1785,8 +1788,10 @@ template {
   padding-left: 0.2777777778rem;
 }
 
-.team__subtitle--active::after {
-  content: url(./../img/Frame\ 1.svg);
+.team__subtitle--active .team__subtitle::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-right: 0.2777777778rem;
 }
 
 .team--desktop .team__content {
@@ -1832,7 +1837,12 @@ template {
   display: -ms-flexbox;
   display: flex;
   background: rgba(0, 0, 0, 0.5);
-  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .modal.error-modal .modal__contant {
   color: red;

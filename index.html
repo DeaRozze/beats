@@ -7,7 +7,10 @@
   <title>Beats</title>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -254,7 +257,7 @@
 
               <li class="slider__item">
                 <div class="slider__left-col">
-                  <img class="slider__img" src="./img/Ellipse 6.svg">
+                  <img class="slider__img" src="./img/Ellipse 6(1).svg">
                 </div>
                 <div class="slider__right-col">
                   <div class="options">
@@ -325,11 +328,10 @@
 
                   </div>
 
-                  <h2 class="slider__title">beats solo 3. цвет «атласное серебро»</h2>
+                  <h2 class="slider__title">beats solo pro. цвет «красный цитрус»</h2>
                   <div class="slider__text">
-                    <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к
-                      своему
-                      iPhone — они мгновенно подключатся к нему.</p>
+                    <p>Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два
+                      режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.</p>
                   </div>
                   <ul class="slider__info">
                     <li class="slider__info-item">
@@ -374,11 +376,11 @@
       <div class="container">
         <div class="team__title">Команда</div>
         <ul class="team team--desktop">
-          <li class="team__item">
+          <li class="team__item team__item--active">
             <div class="team__member">
               <img src="./img/Rectangle 4.png" alt="" class="team__img">
             </div>
-            <button class="team__subtitle team__subtitle active" type="button">
+            <button class="team__subtitle team__subtitle--active" type="button">
               Борис Федорович
             </button>
             <div class="team__content">
@@ -760,16 +762,17 @@
       </div>
       <div class="modal__button-container">
         <a href="" class="button app-close-modal button--theme--red">Закрыть</a>
-      </div>    
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
   <script src="./beats.js"> </script>
   <script src="./team.js"> </script>
   <script src="./tabs.js"> </script>
   <script src="./slider.js"> </script>
-  <script src="./form.js"> </script>
+  <script src="./modal.js"> </script>
 </body>
 
 </html>
