@@ -50,6 +50,7 @@
   @include tablets { 
   margin-bottom: rem(10px);
   }
+
 }
 
 .team__member {
@@ -68,19 +69,19 @@
   font-size: rem(18px);
   font-weight: 700;
   margin-bottom: rem(11px);
-
   &::after {
     content: url(./../img/Polygon\ 1.svg);
     padding-left: rem(5px);
-   
   } 
+ 
 }
 
-.team__subtitle--active .team__subtitle::after{
+.team__item--active .team__subtitle::after{
   transform:rotate(180deg);
   padding-right: rem(5px);
   
 }
+
 .team--desktop .team__content {
   position: absolute;
   top: 100%;

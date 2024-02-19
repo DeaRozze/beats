@@ -380,7 +380,7 @@
             <div class="team__member">
               <img src="./img/Rectangle 4.png" alt="" class="team__img">
             </div>
-            <button class="team__subtitle team__subtitle--active" type="button">
+            <button class="team__subtitle " type="button">
               Борис Федорович
             </button>
             <div class="team__content">
@@ -587,39 +587,40 @@
       <div class="container">
         <h2 class="section__title section__title--white">закажите доставку</h2>
         <form class="form">
+          <input type="hidden" name="to" value="somewhere@mail.com">
           <div class="form__col">
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Имя</div>
-                <input type="text" class="form__input">
+                <input type="text" name="name" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Телефон</div>
-                <input type="text" class="form__input">
+                <input type="text" name="phone" class="form__input">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Улица</div>
-                <input type="text" class="form__input">
+                <input type="text" name="street" class="form__input">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Дом</div>
-                <input type="text" class="form__input">
+                <input type="text" name="home" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Корпус</div>
-                <input type="text" class="form__input">
+                <input type="text" name="part" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Квартира</div>
-                <input type="text" class="form__input">
+                <input type="text" name="appartment" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Этаж</div>
-                <input type="text" class="form__input">
+                <input type="text" name="floot" class="form__input">
               </label>
             </div>
           </div>
@@ -761,7 +762,7 @@
         Сообщение отправлено
       </div>
       <div class="modal__button-container">
-        <a href="" class="button app-close-modal button--theme--red">Закрыть</a>
+        <a href="" class="button app-submit-btn button--theme--red">Закрыть</a>
       </div>
     </div>
   </div>
