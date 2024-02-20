@@ -1,11 +1,12 @@
 let list = document.querySelector(".slider__list");
 let controls = document.querySelector(".arrows");
+
 let currentIndex = 0;
 
 const slider = (event) => {
   let target = event.target;
 
-  if (target.classList.contains('arrows__btn')) {
+  if (target.classList.contains('arrows__img')) {
     let targetValue = target.dataset.vector;
 
     if (targetValue === "next") {

@@ -1,7 +1,7 @@
 $('.form').submit(e => {
   e.preventDefault();
 
-  const form = $(e.cuurentTarget);
+  const form = $(e.currentTarget);
   const name = form.find("[name='name']");
   const phone = form.find("[name='phone']");
   const comment = form.find("[name='comment']");
@@ -9,7 +9,7 @@ $('.form').submit(e => {
 
   [name, phone, comment, to].forEach(field => {
 
-    if(field.val() == '') {
+    if(field.val() === '') {
       field.addClass('.input-error');
     }
   })
@@ -24,15 +24,25 @@ $('.form').submit(e => {
     }
   });
 
-  // $fancybox.open({
-  //   src: "#modal",
-  //   type: "inline"
-  // });
-  
 });
 
 $('.app-submit-btn').click(e => {
   e.preventDefault();
+});
 
-  $.$fancybox.close();
+document.getElementById("open-modal-btn").addEventListener('click', function(){
+  document.getElementById('my-modal').classList.add('modal--open')
 })
+
+document.getElementById("app-submit-btn").addEventListener('click', function(){
+  document.getElementById('my-modal').classList.remove('modal--open')
+})
+
+document.querySelector('#my-modal .modal__container').addEventListener('click', e=> {
+  e._isClickWithInModal = true;
+});
+
+document.getElementById('my-modal').addEventListener('click', e => {
+  if (e._isClickWithInModal) return;
+  e.currentTarget.classList.remove('modal--open');
+});

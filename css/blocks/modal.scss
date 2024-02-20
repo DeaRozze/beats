@@ -9,7 +9,8 @@
   background: rgba(00, 00, 00, .5);
   justify-content: center;
   align-items:center;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   &.error-modal {
     .modal__contant {
       color: red;
@@ -41,3 +42,9 @@
 .form__input.input-error {
   border-color:hotpink;
 }
+
+.modal--open {
+  visibility:visible;
+  opacity:1;
+}
+

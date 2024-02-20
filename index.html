@@ -7,10 +7,6 @@
   <title>Beats</title>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -362,11 +358,11 @@
           </div>
         </div>
         <div class="arrows">
-          <button class="arrows__btn " data-vector="prev">
-            <img src="./img/left.svg" alt="стрелочка влево" class="arrows__img">
+          <button class="arrows__btn " >
+            <img src="./img/left.svg" alt="стрелочка влево" class="arrows__img" data-vector="prev">
           </button>
-          <button class="arrows__btn " data-vector="next">
-            <img src="./img/right.svg" alt="стрелочка вправо" class="arrows__img">
+          <button class="arrows__btn " >
+            <img src="./img/right.svg" alt="стрелочка вправо" class="arrows__img" data-vector="next">
           </button>
         </div>
       </div>
@@ -628,7 +624,7 @@
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title form__title--last">Комментарий</div>
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea class="form__input form__input--textarea" name="comment"></textarea>
               </label>
             </div>
             <div class="form__controls">
@@ -650,8 +646,8 @@
                 <div class="radio__title">Не перезванивать</div>
               </label>
             </div>
-            <div class="form__buttons">
-              <input type="submit" value="Заказать" class="button button--theme--red">
+            <div class="form__buttons" >
+              <input type="submit" value="Заказать" class="button button--theme--red" id="open-modal-btn">
               <input type="reset" value="Очистить" class="button button--theme--transparent">
             </div>
           </div>
@@ -756,18 +752,18 @@
       </nav>
     </div>
   </div>
-  <div class="modal fancybox-content" id="modal">
+  <div class="modal" id="my-modal">
     <div class="modal__container">
       <div class="modal__content">
         Сообщение отправлено
       </div>
       <div class="modal__button-container">
-        <a href="" class="button app-submit-btn button--theme--red">Закрыть</a>
+        <a href="" class="button app-submit-btn button--theme--red" id="app-submit-btn">Закрыть</a>
       </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  
 
   <script src="./beats.js"> </script>
   <script src="./team.js"> </script>

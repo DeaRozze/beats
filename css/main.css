@@ -1630,6 +1630,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 5;
 }
 @media screen and (max-width: 768px) {
   .arrows {
@@ -1642,7 +1643,6 @@ template {
   text-decoration: none;
   border: none;
   background-color: transparent;
-  padding: 1.1111111111rem 1.1111111111rem;
 }
 
 .overlay {
@@ -1844,7 +1844,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .modal.error-modal .modal__contant {
   color: red;
@@ -1878,4 +1879,9 @@ template {
 
 .form__input.input-error {
   border-color: hotpink;
+}
+
+.modal--open {
+  visibility: visible;
+  opacity: 1;
 }
