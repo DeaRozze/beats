@@ -17,6 +17,7 @@ $('.form').submit(e => {
   const errorFields = form.find('.input-error');
 
   if (errorFields.length === 0) {
+
     $.ajax({
       url: 'https://webdev-api.loftschool.com/sendmail',
       method: 'post',
@@ -25,33 +26,43 @@ $('.form').submit(e => {
         phone: phone.val(),
         comment: comment.val(),
         to: to.val(),
-      }
+      },
+      success: (data) => {
+        document.getElementById("open-modal-btn").addEventListener('click', function () {
+          document.getElementById('my-modal').classList.add('modal--open')
+        })
+      },
+      error: ошибка  => {document.getElementById("app-submit-btn").addEventListener('click', function () {
+        document.getElementById('my-modal').classList.remove('modal--open')
+       
+      })
+    }
     });
   
   }
- 
+
 });
 
 
 
 
-$('.app-submit-btn').click(e => {
-  e.preventDefault();
-});
+// $('.app-submit-btn').click(e => {
+//   e.preventDefault();
+// });
 
-document.getElementById("open-modal-btn").addEventListener('click', function () {
-  document.getElementById('my-modal').classList.add('modal--open')
-})
+// document.getElementById("open-modal-btn").addEventListener('click', function () {
+//   document.getElementById('my-modal').classList.add('modal--open')
+// })
 
-document.getElementById("app-submit-btn").addEventListener('click', function () {
-  document.getElementById('my-modal').classList.remove('modal--open')
-})
+// document.getElementById("app-submit-btn").addEventListener('click', function () {
+//   document.getElementById('my-modal').classList.remove('modal--open')
+// })
 
-document.querySelector('#my-modal .modal__container').addEventListener('click', e => {
-  e._isClickWithInModal = true;
-});
+// document.querySelector('#my-modal .modal__container').addEventListener('click', e => {
+//   e._isClickWithInModal = true;
+// });
 
-document.getElementById('my-modal').addEventListener('click', e => {
-  if (e._isClickWithInModal) return;
-  e.currentTarget.classList.remove('modal--open');
-});
+// document.getElementById('my-modal').addEventListener('click', e => {
+//   if (e._isClickWithInModal) return;
+//   e.currentTarget.classList.remove('modal--open');
+// });
