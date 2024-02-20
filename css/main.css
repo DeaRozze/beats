@@ -1085,10 +1085,14 @@ template {
 
 .form__input {
   width: 100%;
-  border: none;
   border: 0.1666666667rem solid transparent;
   height: 3.2222222222rem;
   border-radius: 0.2777777778rem;
+}
+.form__input .form__input--error {
+  border-radius: 0.2777777778rem;
+  border: 0.1666666667rem solid transparent;
+  border-color: hotpink;
 }
 .form__input:focus {
   border-color: #E01F3D;
@@ -1847,15 +1851,6 @@ template {
   visibility: hidden;
   opacity: 0;
 }
-.modal.error-modal .modal__contant {
-  color: red;
-}
-.modal.fancybox-content {
-  padding: 0 !important;
-}
-.modal .fancybox-button {
-  display: none;
-}
 
 .modal__container {
   background: black;
@@ -1875,10 +1870,6 @@ template {
 .modal__content {
   margin-bottom: 15px;
   color: white;
-}
-
-.form__input.input-error {
-  border-color: hotpink;
 }
 
 .modal--open {

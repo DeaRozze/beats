@@ -11,19 +11,6 @@
   align-items:center;
   visibility: hidden;
   opacity: 0;
-  &.error-modal {
-    .modal__contant {
-      color: red;
-    }
-  }
-
-  &.fancybox-content {
-    padding: 0 !important;
-  }
-
-  .fancybox-button {
-    display: none;
-  }
 }
 
 .modal__container {
@@ -39,9 +26,7 @@
   color:white;
 }
 
-.form__input.input-error {
-  border-color:hotpink;
-}
+
 
 .modal--open {
   visibility:visible;

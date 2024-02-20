@@ -8,37 +8,46 @@ $('.form').submit(e => {
   const to = form.find("[name='to']");
 
   [name, phone, comment, to].forEach(field => {
-
-    if(field.val() === '') {
-      field.addClass('.input-error');
-    }
-  })
-  $.ajax({
-    url: 'https://webdev-api.loftschool.com/sendmail',
-    method: 'post',
-    data: {
-      name: name.val(),
-      phone: phone.val(),
-      comment: comment.val(),
-      to: to.val(),
+    field.removeClass('input-error');
+    if (field.val().trim() === '') {
+      field.addClass('form__input--error');
     }
   });
 
+  const errorFields = form.find('.input-error');
+
+  if (errorFields.length === 0) {
+    $.ajax({
+      url: 'https://webdev-api.loftschool.com/sendmail',
+      method: 'post',
+      data: {
+        name: name.val(),
+        phone: phone.val(),
+        comment: comment.val(),
+        to: to.val(),
+      }
+    });
+  
+  }
+ 
 });
+
+
+
 
 $('.app-submit-btn').click(e => {
   e.preventDefault();
 });
 
-document.getElementById("open-modal-btn").addEventListener('click', function(){
+document.getElementById("open-modal-btn").addEventListener('click', function () {
   document.getElementById('my-modal').classList.add('modal--open')
 })
 
-document.getElementById("app-submit-btn").addEventListener('click', function(){
+document.getElementById("app-submit-btn").addEventListener('click', function () {
   document.getElementById('my-modal').classList.remove('modal--open')
 })
 
-document.querySelector('#my-modal .modal__container').addEventListener('click', e=> {
+document.querySelector('#my-modal .modal__container').addEventListener('click', e => {
   e._isClickWithInModal = true;
 });
 
