@@ -5,7 +5,6 @@
   justify-content: center;
 
   &--map-section {
-    background: url(../img/map.png) center center no-repeat;
     position: relative;
     background-size:cover;
   }
@@ -19,6 +18,12 @@
   margin-bottom: rem(60px);
   text-align: center;
   color:#292929;
+}
+
+.map {
+  height: 500px;
+  width: 500px;
+  background-color: #292929;
 }
 
 

@@ -672,7 +672,6 @@ template {
           justify-content: center;
 }
 .section--map-section {
-  background: url(../img/map.png) center center no-repeat;
   position: relative;
   background-size: cover;
 }
@@ -685,6 +684,12 @@ template {
   margin-bottom: 3.3333333333rem;
   text-align: center;
   color: #292929;
+}
+
+.map {
+  height: 500px;
+  width: 500px;
+  background-color: #292929;
 }
 
 .features__section {
