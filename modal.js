@@ -18,34 +18,46 @@ $('.form').submit(e => {
 
   if (errorFields.length === 0) {
 
-    const request = $.ajax({
-      url: 'https://webdev-api.loftschool.com/sendmail',
-      method: 'post',
-      data: {
-        name: name.val(),
-        phone: phone.val(),
-        comment: comment.val(),
-        to: to.val(),
-      },
-    });
+    const json_data = JSON.stringify({
+      name: form['name'].value,
+      phone: form['phone'].value,
+      comment: form['comment'].value,
+      to: 'vl4dkudi@gmail.com'
+    })
 
-    request.done((data) => {
-      document.getElementById('my-modal').classList.add('modal--open');
-  });
-  request.fail((data) => {
-    document.getElementById('my-modal').classList.remove('modal--open')
-});
-
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.setRequestHeader('modal', 'application/json');
+    xhr.send(json_data);
+    xhr.addEventListener('load', () => {
+      if (xhr.status >= 400) {
+        document.getElementById('my-modal').classList.add('modal--open');
+      } else {
+        document.getElementById('my-modal').classList.remove('modal--open');
+        form.reset();
+      }
+    })
   }
-})
+  })
+
+//     request.done((data) => {
+//       document.getElementById('my-modal').classList.add('modal--open');
+//   });
+//   request.fail((data) => {
+//     document.getElementById('my-modal').classList.remove('modal--open')
+// });
+
+//   }
+// })
   
 
 
-      // success: (data) => {
+    //   success: (data) => {
         
-      //     document.getElementById('my-modal').classList.add('modal--open')
+    //       document.getElementById('my-modal').classList.add('modal--open')
         
-      // },
+    //   },
     //   error: ошибка  => {
         
     //     document.getElementById('my-modal').classList.remove('modal--open')
@@ -53,9 +65,14 @@ $('.form').submit(e => {
       
     // }
     // });
-$('.app-submit-btn').click(e => {
-  e.preventDefault();
-});
+  
+
+
+
+
+// $('.app-submit-btn').click(e => {
+//   e.preventDefault();
+// });
 
 // document.getElementById("open-modal-btn").addEventListener('click', function () {
 //   document.getElementById('my-modal').classList.add('modal--open')
