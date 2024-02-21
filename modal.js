@@ -14,11 +14,11 @@ $('.form').submit(e => {
     }
   });
 
-  const errorFields = form.find('.input-error');
+  const errorFields = form.find('input-error');
 
   if (errorFields.length === 0) {
 
-    $.ajax({
+    const request = $.ajax({
       url: 'https://webdev-api.loftschool.com/sendmail',
       method: 'post',
       data: {
