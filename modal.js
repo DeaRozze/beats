@@ -28,7 +28,7 @@ $('.form').submit(e => {
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.setRequestHeader('modal', 'application/json');
+    xhr.setRequestHeader('content-type', 'application/json');
     xhr.send(json_data);
     xhr.addEventListener('load', () => {
       if (xhr.status >= 400) {
