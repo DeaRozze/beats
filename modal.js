@@ -27,24 +27,32 @@ $('.form').submit(e => {
         comment: comment.val(),
         to: to.val(),
       },
-      success: (data) => {
-        
-          document.getElementById('my-modal').classList.add('modal--open')
-        
-      },
-      error: ошибка  => {
-        
-        document.getElementById('my-modal').classList.remove('modal--open')
-      
-      
-    }
     });
-  
-  }
 
+    request.done((data) => {
+      document.getElementById('my-modal').classList.add('modal--open');
+  });
+  request.fail((data) => {
+    document.getElementById('my-modal').classList.remove('modal--open')
 });
 
+  }
+})
+  
 
+
+      // success: (data) => {
+        
+      //     document.getElementById('my-modal').classList.add('modal--open')
+        
+      // },
+    //   error: ошибка  => {
+        
+    //     document.getElementById('my-modal').classList.remove('modal--open')
+      
+      
+    // }
+    // });
 $('.app-submit-btn').click(e => {
   e.preventDefault();
 });
