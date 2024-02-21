@@ -19,9 +19,9 @@ $('.form').submit(e => {
   if (errorFields.length === 0) {
 
     const json_data = JSON.stringify({
-      name: form['name'].value,
-      phone: form['phone'].value,
-      comment: form['comment'].value,
+      name: name.val(),
+      phone: phone.val(),
+      comment: comment.val(),
       to: 'vl4dkudi@gmail.com'
     })
 
