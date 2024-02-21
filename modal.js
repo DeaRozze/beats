@@ -28,14 +28,15 @@ $('.form').submit(e => {
         to: to.val(),
       },
       success: (data) => {
-        document.getElementById("open-modal-btn").addEventListener('click', function () {
+        
           document.getElementById('my-modal').classList.add('modal--open')
-        })
+        
       },
-      error: ошибка  => {document.getElementById("app-submit-btn").addEventListener('click', function () {
+      error: ошибка  => {
+        
         document.getElementById('my-modal').classList.remove('modal--open')
-       
-      })
+      
+      
     }
     });
   
@@ -44,11 +45,9 @@ $('.form').submit(e => {
 });
 
 
-
-
-// $('.app-submit-btn').click(e => {
-//   e.preventDefault();
-// });
+$('.app-submit-btn').click(e => {
+  e.preventDefault();
+});
 
 // document.getElementById("open-modal-btn").addEventListener('click', function () {
 //   document.getElementById('my-modal').classList.add('modal--open')
