@@ -1,13 +1,46 @@
 .player-section__container {
   width: rem(662px);
   height: rem(390px);
-
+  
 }
 .player {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
+  
+
+  &--active .player__splash {
+    display: none;
+  }
+
+  &--paused {
+    .player__start {
+      width:11px;
+      height: 15px;
+      border:none;
+      background:transparent;
+
+      &::after,
+      &::before {
+        content:"";
+        display: block;
+        position: absolute;
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        background:white;
+      }
+
+      &::after {
+        right: 0;
+      }
+
+      &::before {
+        left: 0;
+      }
+    }
+  }
 }
 
 .player__splash {
@@ -18,6 +51,14 @@
   bottom: 0;
   background: url(/img/Rectangle\ 9.png)
   center center/cover no-repeat;
+  
+  &::before{
+    content:url(/img/Group1.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
 }
 
 .player__controls {
@@ -26,9 +67,80 @@
   left: 0;
   right: 0;
   height: 35px;
-  background:gray;
+  background:rgb(21, 21, 21);
   display: flex;
   align-items:center;
   justify-content: space-between;
   padding: 0 25px;
+  color: rgb(224, 31, 61);
+  
+}
+
+.player__start {
+  background:url(/img/Group.svg) no-repeat;
+  width:11px;
+  height: 15px;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.player__playback {
+  height: 16px;
+  width: 450px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content:'';
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background:rgb(51, 51, 51);
+    display: block;
+    transform: translateY(-50%);
+  }
+}
+
+.player__playback-button {
+  background:rgb(224, 31, 61);
+  border-radius: 50px;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  cursor: pointer;
+}
+
+.duration__length {
+  width: 58px;
+  height: 4px;
+  appearance: none;
+  outline: none;
+  background:rgb(51, 51, 51);
+}
+
+.duration__length::-webkit-slider-thumb {
+  appearance: none;
+  background:red;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius:50%;
+}
+
+.sound {
+  display: flex;
+  align-items: flex-end;
+ padding-bottom: 7px;
+  
+  &__icon {
+    margin-right: 10px;
+  }
 }

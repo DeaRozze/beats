@@ -1,42 +1,24 @@
-// ymaps3.ready.then(() => {
-//   const map = new ymaps3.YMap(document.getElementById('YMapsID'), {
-//     location: {
-//       center: [37.64, 55.76],
-//       zoom: 10
-//     }
-//   });
-// });
 
-// let myMap;
- 
-// const init = () => {
-//  myMap = new ymaps.Map("map", {
-//    center: [55.76, 37.64],
-//    zoom: 7
-//  });
-// };
- 
-// ymaps.ready(init);
 
 let myMap;
 const init = () => {
  myMap = new ymaps.Map("map", {
-   center: [59.93916998692174, 30.309015096732622],
-   zoom: 11,
+   center: [55.755864, 37.617698],
+   zoom: 13,
    controls: [],
  });
  
  let coords = [
-     [59.94554327989287, 30.38935262114668],
-     [59.91142323563909, 30.50024587065841],
-     [59.88693161784606, 30.319658102103713],
-     [59.97033574821672, 30.315194906302924],
+     [55.749486, 37.591494],
+     [55.763417, 37.629008],
+     [55.763903, 37.606478],
+     [55.737831, 37.628163],
    ],
    myCollection = new ymaps.GeoObjectCollection({}, {
      draggable: false,
      iconLayout: 'default#image',
-     iconImageHref: './img/icons/marker.svg',
-     iconImageSize: [46, 57],
+     iconImageHref: './img/marker.svg',
+     iconImageSize: [58, 73],
      iconImageOffset: [-35, -52]
    });
  

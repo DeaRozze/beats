@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -358,10 +357,10 @@
           </div>
         </div>
         <div class="arrows">
-          <button class="arrows__btn " >
+          <button class="arrows__btn ">
             <img src="./img/left.svg" alt="стрелочка влево" class="arrows__img" data-vector="prev">
           </button>
-          <button class="arrows__btn " >
+          <button class="arrows__btn ">
             <img src="./img/right.svg" alt="стрелочка вправо" class="arrows__img" data-vector="next">
           </button>
         </div>
@@ -507,6 +506,56 @@
       </div>
     </section>
 
+    <section class="section color-section">
+      <div class="container color__container">
+        <h1 class="section__title color-section__title">Цвета</h1>
+        <ul class="color__menu">
+          <li class="color__item">
+            <a href="" class="color__title color__title--gray">
+              <div class="color__text">«Атласное серебро»</div>
+            </a>
+            <div class="color__content">
+              <div class="color__info">
+                <div class="color__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                  пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения.
+                  Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду —
+                  куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете
+                  носить их целый день.</div>
+              </div>
+            </div>
+          </li>
+          <li class="color__item">
+            <a href="" class="color__title color__title--black">
+              <div class="color__text">«Чёрный матовый»</div>
+            </a>
+            <div class="color__content">
+              <div class="color__info">
+                <div class="color__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                  пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения.
+                  Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду —
+                  куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете
+                  носить их целый день.</div>
+              </div>
+            </div>
+          </li>
+          <li class="color__item">
+            <a href="" class="color__title color__title--red">
+              <div class="color__text">«Красный цитрус»</div>
+            </a>
+            <div class="color__content">
+              <div class="color__info">
+                <div class="color__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы
+                  вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                  воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет
+                  сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно
+                  регулировать — вы сможете носить их целый день.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section comments__section">
       <div class="container">
         <h2 class="section__title">отзывы</h2>
@@ -583,19 +632,22 @@
       <div class="container">
         <h2 class="section__title">Как мы работаем</h2>
         <div class="player-section__container">
-          <div class="player">
+          <div class="player ">
             <div class="player__wrapper">
               <div id="yt-player" class="player__elem"></div>
-              <div class="player__splash"></div>
+              <div class="player__splash">
+              </div>
             </div>
             <div class="player__controls">
-              <button class="player__start"></button>
+              <button class="player__start "></button>
               <div class="player__playback">
                 <button class="player__playback-button"></button>
               </div>
-              <div class="player__duration">
-                <span class="player__duration-completed">0:00</span> :
-                <span class="player__duration-estimate">0:00</span>
+              <div class="sound">
+                <img src="img/Group (1).png" alt="" class="sound__icon" id="micLevel">
+                <div class="sound__volume">
+                  <input type="range" class="duration__length" id="volumeLevel" min="0" max="10">
+                </div>
               </div>
             </div>
           </div>
@@ -670,7 +722,7 @@
                 <div class="radio__title">Не перезванивать</div>
               </label>
             </div>
-            <div class="form__buttons" >
+            <div class="form__buttons">
               <input type="submit" value="Заказать" class="button button--theme--red" id="open-modal-btn">
               <input type="reset" value="Очистить" class="button button--theme--transparent">
             </div>
@@ -679,7 +731,7 @@
       </div>
     </section>
     <section class="section section--map-section">
-      <div  id="map" class="map"></div>
+      <div id="map" class="map"></div>
       <footer class="footer">
         <div class=" container footer__container">
           <address class="contacts footer__contacts">
@@ -787,15 +839,16 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  
 
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="./beats.js"> </script>
   <script src="./team.js"> </script>
   <script src="./tabs.js"> </script>
   <script src="./slider.js"> </script>
   <script src="./modal.js"> </script>
-  <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="./map.js"> </script>
+  <script src="./player.js"> </script>
+  <script src="./color.js"> </script>
 </body>
-
 </html>

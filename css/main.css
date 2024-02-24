@@ -686,9 +686,8 @@ template {
 }
 
 .map {
-  height: 500px;
-  width: 500px;
-  background-color: #292929;
+  height: 100vh;
+  width: 100%;
 }
 
 .features__section {
@@ -1892,6 +1891,30 @@ template {
   width: 100%;
   height: 100%;
 }
+.player--active .player__splash {
+  display: none;
+}
+.player--paused .player__start {
+  width: 11px;
+  height: 15px;
+  border: none;
+  background: transparent;
+}
+.player--paused .player__start::after, .player--paused .player__start::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  background: white;
+}
+.player--paused .player__start::after {
+  right: 0;
+}
+.player--paused .player__start::before {
+  left: 0;
+}
 
 .player__splash {
   position: absolute;
@@ -1901,6 +1924,14 @@ template {
   bottom: 0;
   background: url(/img/Rectangle\ 9.png) center center/cover no-repeat;
 }
+.player__splash::before {
+  content: url(/img/Group1.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 
 .player__controls {
   position: absolute;
@@ -1908,7 +1939,7 @@ template {
   left: 0;
   right: 0;
   height: 35px;
-  background: gray;
+  background: rgb(21, 21, 21);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1919,4 +1950,163 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 25px;
+  color: rgb(224, 31, 61);
+}
+
+.player__start {
+  background: url(/img/Group.svg) no-repeat;
+  width: 11px;
+  height: 15px;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.player__playback {
+  height: 16px;
+  width: 450px;
+  position: relative;
+  cursor: pointer;
+}
+.player__playback::before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: rgb(51, 51, 51);
+  display: block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.player__playback-button {
+  background: rgb(224, 31, 61);
+  border-radius: 50px;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0;
+  cursor: pointer;
+}
+
+.duration__length {
+  width: 58px;
+  height: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  background: rgb(51, 51, 51);
+}
+
+.duration__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  background: red;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 7px;
+}
+.sound__icon {
+  margin-right: 10px;
+}
+
+.color__container {
+  position: static;
+}
+
+.color-section {
+  background: url(/img/menn.jpg) center center/cover no-repeat;
+  position: relative;
+}
+.color-section__title {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 380px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.color__menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color__title {
+  position: relative;
+  width: 100px;
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.color__title--gray {
+  background-color: rgb(153, 153, 153);
+}
+.color__title--black {
+  background-color: rgb(21, 21, 21);
+}
+.color__title--red {
+  background-color: rgb(224, 31, 60);
+}
+
+.color__text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3888888889rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: inline;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  padding: 1.8888888889rem 0;
+}
+
+.color__content {
+  background-color: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+
+.color__info {
+  padding: 40px 73px 45px 26px;
 }

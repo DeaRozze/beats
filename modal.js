@@ -8,13 +8,14 @@ $('.form').submit(e => {
   const to = form.find("[name='to']");
 
   [name, phone, comment, to].forEach(field => {
-    field.removeClass('input-error');
+    field.removeClass('form__input--error');
+    
     if (field.val().trim() === '') {
       field.addClass('form__input--error');
     }
   });
 
-  const errorFields = form.find('input-error');
+  const errorFields = form.find('form__input--error');
 
   if (errorFields.length === 0) {
 
