@@ -9,7 +9,7 @@ const openItem = item => {
   hiddenContent.width(reqWidth);
 
 }
-
+(function() {
 $('.color__title').on('click', e => {
   e.preventDefault();
 
@@ -19,3 +19,4 @@ $('.color__title').on('click', e => {
   openItem(item);
   
 });
+})();
