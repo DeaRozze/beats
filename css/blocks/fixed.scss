@@ -48,3 +48,16 @@
 .fixed-menu--shadowed {
   color:white;
 }
+
+.fixed-menu__link--white {
+  &::before {
+    width: rem(6px);
+    height: rem(6px);
+    border-radius:50%;
+    background: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+} 

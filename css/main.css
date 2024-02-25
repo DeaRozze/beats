@@ -1286,6 +1286,18 @@ template {
   color: white;
 }
 
+.fixed-menu__link--white::before {
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .hamburger {
   position: fixed;
   top: 20px;
@@ -1922,10 +1934,13 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 36.7777777778rem;
+  height: 21.7222222222rem;
 }
 
 .video__player {
   position: relative;
+  width: 100%;
 }
 
 .video__play {
@@ -2005,13 +2020,30 @@ template {
   display: flex;
 }
 
+.video {
+  width: 100%;
+}
+
+.video__title {
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  line-height: 2.8888888889rem;
+  text-transform: uppercase;
+  margin-bottom: 3.3333333333rem;
+  text-align: center;
+  color: #292929;
+  margin-top: 2.7777777778rem;
+}
+
 .color__container {
   position: static;
+  width: 100%;
 }
 
 .color-section {
   background: url(../img/menn.jpg) center center/cover no-repeat;
   position: relative;
+  width: 100%;
 }
 .color-section__title {
   color: white;

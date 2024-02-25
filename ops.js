@@ -15,11 +15,18 @@ const performTransition = (sectionEq) => {
     const currentSection = sections.eq(sectionEq);
     const menuTheme = currentSection.attr('data-sidemenu-theme');
     const sideMenu = $('.fixed-menu');
+    const fixLink = $('.fixed-menu__link');
 
     if (menuTheme === 'black') {
       sideMenu.addClass('fixed-menu--shadowed');
     }else {
       sideMenu.removeClass('fixed-menu--shadowed');
+    }
+
+    if (sideMenu.hasClass('fixed-menu--shadowed')) {
+      fixLink.addClass('fixed-menu__link--white');
+    }else {
+      fixLink.removeClass('fixed-menu__link--white');
     }
 
     display.css({
