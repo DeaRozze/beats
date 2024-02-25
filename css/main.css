@@ -60,8 +60,8 @@ ul, li {
 
 .maincontent {
   height: 100%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
