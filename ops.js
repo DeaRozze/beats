@@ -19,6 +19,5 @@ $(window).on('wheel', e => {
   if (deltaY < 0) {
 
   }
- 
 
 });
