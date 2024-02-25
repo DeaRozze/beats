@@ -13,7 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="top-part">
+      <section class="top-part" data-section-id="top-part" data-sidemenu-theme="black">
         <div class="container">
           <header class="header">
             <div class="logo">
@@ -24,25 +24,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="" class="menu__link">О нас</a>
+                  <a href="#" data-scroll-to="features" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Наушники</a>
+                  <a href="#" data-scroll-to="slider" class="menu__link">Наушники</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Команда</a>
+                  <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Цвета</a>
+                  <a href="#" data-scroll-to="colors" class="menu__link">Цвета</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Отзывы</a>
+                  <a href="#" data-scroll-to="comments" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Как мы работаем</a>
+                  <a href="#" data-scroll-to="delivery" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Контакты</a>
+                  <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -88,7 +88,7 @@
           </main>
         </div>
       </section>
-      <section class="section features__section">
+      <section class="section features__section" data-section-id="features" data-sidemenu-theme="black">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">почему beats solo 3?</h2>
@@ -147,7 +147,7 @@
         </div>
       </section>
 
-      <section class="slider__section">
+      <section class="slider__section" data-section-id="slider" data-sidemenu-theme="white">
         <div class="container container slider--container">
           <div class="slider">
             <div class="slider__wrapp">
@@ -370,7 +370,7 @@
         </div>
       </section>
 
-      <section class="team__section">
+      <section class="team__section" data-section-id="team" data-sidemenu-theme="white">
         <div class="container">
           <div class="team__title">Команда</div>
           <ul class="team team--desktop">
@@ -509,7 +509,7 @@
         </div>
       </section>
 
-      <section class="section color-section">
+      <section class="section color-section" data-section-id="colors" data-sidemenu-theme="white">
         <div class="container color__container">
           <h1 class="section__title color-section__title">Цвета</h1>
           <ul class="color__menu">
@@ -563,7 +563,7 @@
         </div>
       </section>
 
-      <section class="section comments__section">
+      <section class="section comments__section" data-section-id="comments" data-sidemenu-theme="white">
         <div class="container">
           <h2 class="section__title">отзывы</h2>
           <div class="comments">
@@ -637,7 +637,7 @@
         </div>
       </section>
 
-      <section class=" video__section">
+      <section class=" video__section" data-section-id="video" data-sidemenu-theme="white">
         <div class="video__container">
           <div class="video__player">
             <video class="video" poster="/img/Rectangle 9.png" id="video">
@@ -659,7 +659,7 @@
           </div>
         </div>
       </section>
-      <section class="delivery-section">
+      <section class="delivery-section" data-section-id="delivery" data-sidemenu-theme="black">
         <div class="container">
           <h2 class="section__title section__title--white">закажите доставку</h2>
           <form class="form">
@@ -734,7 +734,7 @@
           </form>
         </div>
       </section>
-      <section class="section section--map-section">
+      <section class="section section--map-section" data-section-id="map" data-sidemenu-theme="white">
         <div id="map" class="map"></div>
         <footer class="footer">
           <div class=" container footer__container">
@@ -782,17 +782,26 @@
       </section>
     </div>
   </div>
-  <nav class="fixed-menu">
+  <nav class="fixed-menu ">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item fixed-menu__item--active " >
+        <a href="#" class="fixed-menu__link " data-scroll-to="top-part"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="features"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="slider"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="team"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="colors"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="comments"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="video"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="delivery"></a></li>
+      <li class="fixed-menu__item" >
+        <a href="#" class="fixed-menu__link" data-scroll-to="map"></a></li>
     </ul>
   </nav>
 
@@ -809,25 +818,25 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item ">
-            <a href="" class="menu__link">О нас</a>
+            <a href="#" class="menu__link">О нас</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Наушники</a>
+            <a href="#" class="menu__link">Наушники</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Команда</a>
+            <a href="#" class="menu__link">Команда</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Цены</a>
+            <a href="#" class="menu__link">Цены</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Отзывы</a>
+            <a href="#" class="menu__link">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Как мы работаем</a>
+            <a href="#" class="menu__link">Как мы работаем</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Контакты</a>
+            <a href="#" class="menu__link">Контакты</a>
           </li>
         </ul>
       </nav>

@@ -1282,6 +1282,10 @@ template {
           transform: translate(-50%, -50%);
 }
 
+.fixed-menu--shadowed {
+  color: white;
+}
+
 .hamburger {
   position: fixed;
   top: 20px;

@@ -18,8 +18,10 @@
   &--active {
     .fixed-menu__link {
       border-color: #E01F3D;
+    
     }
   }
+
 }
 
 .fixed-menu__link {
@@ -41,4 +43,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.fixed-menu--shadowed {
+  color:white;
 }
