@@ -23,12 +23,6 @@ const performTransition = (sectionEq) => {
       sideMenu.removeClass('fixed-menu--shadowed');
     }
 
-    if (sideMenu.hasClass('fixed-menu--shadowed')) {
-      fixLink.addClass('fixed-menu__link--white');
-    }else {
-      fixLink.removeClass('fixed-menu__link--white');
-    }
-
     display.css({
       transform: `translateY(${position}%)`,
     });

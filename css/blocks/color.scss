@@ -13,6 +13,14 @@
     top: 150px;
     left: 380px;
     transform: translate(-50%, -50%);
+
+    @include tablets {
+      left: 100px;
+    }
+
+    @include phones {
+      left: 80px;
+    }
 }
 }
 

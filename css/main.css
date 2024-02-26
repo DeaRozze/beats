@@ -1282,20 +1282,8 @@ template {
           transform: translate(-50%, -50%);
 }
 
-.fixed-menu--shadowed {
-  color: white;
-}
-
-.fixed-menu__link--white::before {
-  width: 0.3333333333rem;
-  height: 0.3333333333rem;
-  border-radius: 50%;
+.fixed-menu--shadowed .fixed-menu__link::before {
   background: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .hamburger {
@@ -1796,6 +1784,9 @@ template {
   position: relative;
   max-width: 14.44444rem;
 }
+.team__item:last-child {
+  margin-right: 0;
+}
 @media screen and (max-width: 768px) {
   .team__item {
     margin-bottom: 0.5555555556rem;
@@ -1941,6 +1932,7 @@ template {
 .video__player {
   position: relative;
   width: 100%;
+  margin-bottom: -6px;
 }
 
 .video__play {
@@ -2052,6 +2044,16 @@ template {
   left: 380px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .color-section__title {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .color-section__title {
+    left: 80px;
+  }
 }
 
 .color__menu {

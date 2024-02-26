@@ -3,6 +3,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  
 }
 .video__container {
   display: flex;
@@ -15,6 +16,7 @@
 .video__player {
   position: relative;
   width: 100%;
+  margin-bottom: -6px;
 }
 
 .video__play {
