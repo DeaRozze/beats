@@ -1,0 +1,35 @@
+.menu {
+  margin: 0 4%;
+  padding-top: 5px;
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  margin-right: rem(27px);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  color: #292929;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: rem(30px);
+  white-space: nowrap;
+
+  &:hover{
+    color: #E01F3D;
+    transition: 0.3s ease;
+  }
+}

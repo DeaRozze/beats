@@ -1,0 +1,46 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: fixed;
+  left: 0;
+  top: -100%;
+  opacity: 0;
+  z-index: 10;
+}
+.overlay__menu .menu {
+  display: block;
+}
+.overlay__menu .menu__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.overlay__menu .menu__item {
+  margin-right: 0;
+  color: white;
+  font-size: re;
+}
+
+.overlay--active {
+  top: 0;
+  opacity: 1;
+  z-index: 10;
+}
+
+.body--active-menu {
+  overflow: hidden;
+}

@@ -1,0 +1,30 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--map-section {
+    position: relative;
+  }
+}
+
+.section__title {
+  font-size: rem(48px);
+  font-weight: 700;
+  line-height: rem(52px);
+  text-transform: uppercase;
+  margin-bottom: rem(60px);
+  text-align: center;
+  color:#292929;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+  
+}
+
+
+
+

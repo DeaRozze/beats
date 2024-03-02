@@ -1,0 +1,21 @@
+.top-part {
+  background: url("././img/Ellipse\ 5.png") 82% 28% no-repeat;
+  background-color: #F5F5F5 ;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  @include tablets {
+    background:none;
+    background-color:#F5F5F5;
+    
+  }
+  
+  &::before {
+    content: url("././img/Rectangle\ 14.svg");
+    position: absolute;
+    bottom: rem(-26px);
+    right: 26%;
+  }
+
+}

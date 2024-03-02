@@ -1,0 +1,74 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(70px);
+  width: 46%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 100vh;
+
+    &::before {
+      content:"";
+      background-image: url("././img/Ellipse\ 5.png");
+      position: absolute;
+      width: 323px;
+      height: 323px;
+      background-size: cover;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 120px;
+    }
+  }
+
+}
+
+.preview__title {
+  font-size: rem(48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: rem(52px);  
+  text-transform: uppercase;
+  margin-bottom: rem(22px);
+  color:#292929;
+
+  @include tablets {
+    padding: 0 8%;
+    padding-top: rem(10px);
+  }
+
+  @include phones {
+    padding: 0 4%;
+    padding-top: rem(10px);
+  }
+}
+
+.preview__text {
+  font-family: "Alegreya Sans";
+  font-size: rem(21px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: rem(36px);
+  color:#292929;
+
+  @include tablets {
+    padding: 0 25%;
+  }
+
+  @include phones {
+    padding: 0 16%;
+  }
+}
+
+
+
+
+
+

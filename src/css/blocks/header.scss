@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: rem(25px);
+  margin-bottom: rem(97px);
+
+ 
+}
+
+.header__contacts--number {
+  @include tablets {
+    display: none;
+  }
+}
+
+.logo-icon{
+  width: 40px;
+  height: 40px;
+}

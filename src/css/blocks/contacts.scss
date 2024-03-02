@@ -1,0 +1,55 @@
+.contacts {
+  white-space: nowrap;
+  padding-top: 10px;
+}
+
+.contacts__tel {
+  font-size: rem(18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: rem(18px);
+
+  @include tablets {
+   &--red {
+    color: red;
+   }
+  }
+
+  @include phones {
+    &--red {
+     color: black;
+    }
+   }
+}
+
+.contacts__place {
+  font-style: normal;
+  color:black;
+
+  @include tablets {
+    margin-bottom: rem(6px);
+  }
+
+  @include phones {
+    margin-bottom: rem(15px);
+  }
+}
+
+.contacts-icon {
+  fill: black;
+  width: rem(12px);
+  height: rem(12px);
+
+  @include tablets {
+    &--red {
+      fill: red;
+    }
+  }
+
+  @include phones {
+    &--red {
+      fill: black;
+    }
+   }
+}
+

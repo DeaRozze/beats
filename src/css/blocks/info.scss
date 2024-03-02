@@ -1,0 +1,29 @@
+.info{
+  display: flex;
+  margin-right: rem(-8px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.info__list {
+  display: flex;
+  align-items: center;
+  margin-right: rem(8px);
+  width: rem(166px);
+}
+
+.info-icon{
+  margin-right: rem(11px);
+  width: 41px;
+  height: 41px;
+}
+
+.info__text {
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: rem(18px);
+}
+

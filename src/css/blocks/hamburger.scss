@@ -1,0 +1,58 @@
+.hamburger{
+  position: fixed; 
+  top:20px;
+  right: 10%;
+  height: 25px;
+  width: 40px;
+  cursor:pointer;
+  z-index: 15;
+  transition:all .4s;
+  display: none;
+
+  @include tablets {
+    display: inline-block;
+  &__plank{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color:black;
+    top:0;
+    left: 0;
+    transition:all .4s;
+
+    
+    &:nth-child(2){
+      top:50%;
+      transform:translateY(-50%);
+    }
+    
+    &:nth-child(3){
+      bottom:0;
+      top:initial;
+    }
+  }
+}
+}
+
+.hamburger--active{
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 25px;
+  position: fixed; 
+  top:20px;
+  right: 10%;
+  .hamburger__plank{
+    &:nth-child(1){
+      opacity:0;
+    }
+    
+    &:nth-child(2){
+      transform:rotate(45deg);
+    }
+    
+    &:nth-child(3){
+      transform:rotate(-45deg) translateY(-8px) translateX(5px);
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.features__section {
+  height: 100vh;
+}
+
+.features__list{
+  display: flex;
+
+  @include phones {
+    flex-direction:column;
+}
+}
+
+.features__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(30px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+ &::before {
+  content: url(././img/elips.png);
+  position: absolute;
+  top: rem(50px);
+  right: 0;
+  transform: translateX(50%);
+  
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    display: none;
+  }
+}
+
+ &:first-child {
+ padding-left: 0;
+}
+
+ &:last-child {
+  padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+}
+}
+
+.feature {
+  text-align: center;
+
+  @include phones {
+    display:flex;
+    text-align: left;
+  }
+}
+
+.feature__image--wrapper {
+  display: inline-block;
+  width: rem(128px);
+  height: rem(128px);
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: rem(24px);
+
+  @include phones {
+    margin-bottom: 0;
+  }
+}
+
+.feature__icon {
+  width: rem(75px);
+  height: rem(69px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature__title {
+  font-size: rem(24px);
+  font-weight: 700;
+  line-height: normal;
+  color:#292929;
+  margin-bottom: rem(7px);
+}
+
+.feature__desc {
+  padding: 0 6%;
+  
+  @include phones {
+    padding: 0;
+  }
+}
+
+.feature__text {
+  @include phones {
+    padding-left:5% ;
+  }
+}
+
+.features__section {
+  position: relative;
+
+  &::before {
+    content: url("././img/Vector\ 2.svg");
+    position: absolute;
+    bottom: rem(-50px);
+    left: 22%;
+  }
+}

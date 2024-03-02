@@ -1,0 +1,23 @@
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  z-index: 5;
+
+  @include tablets {
+    top: 30%;
+  }
+}
+
+.arrows__btn {
+  cursor: pointer;
+  text-decoration: none;
+  border:none;
+  background-color:transparent;
+  
+}
